@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+
+<TEI>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Versione elettronica degli scritti autografi di <persName ref="#EA">Emanuele Artom</persName></title>
+            </titleStmt>
+
+            <editionStmt>
+                <edition>Il presente lavoro è stato eseguito per un progetto più ampio che ha coinvolto vari studenti
+                di Informatica Umanistica, nella conversione di scritti autografi di <persName ref="#EA">Emanuele Artom</persName>.</edition>
+                <respStmt>
+                    <resp>Codifica a cura di:</resp>
+                    <name xml:id="RC">Riccardo Chiari</name>
+                    <name xml:id="AS">Adele Stilo</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Progetto coordinato da:</resp>
+                    <name xml:id="AMDG">Angelo Mario Del Grosso</name>
+                </respStmt>
+            </editionStmt>
+
+            <publicationStmt>
+                <publisher>Università di Pisa</publisher>
+                <pubPlace>Pisa</pubPlace>
+                <date when="2023">2023</date>
+                <availability><p>Opera ad accesso libero</p></availability>
+            </publicationStmt>
+
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country>Italia</country>
+                        <settlement>Milano</settlement>
+                        <repository ref="http://digital-library.cdec.it/cdec-web/">Centro di Documentazione Ebraica Contemporanea</repository>
+                        <idno>ST0003-000006</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <author ref="#EA">Emanuele Artom</author>
+                            <title>I diari di <persName ref="#EA">Emanuele Artom</persName></title>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>Fogli di carta</support>
+                                <extent>172 pagine di scritti autografi di <persName ref="#EA">Emanuele Artom</persName> introdotte da 2
+                                pagine, di cui una è la lettera originale della madre Amalia</extent>
+                            </supportDesc>
+                            <layoutDesc>
+                                <p>Le pagine del diario contengono 22 righe, tra le quali possono interporsi delle aggiunte che proseguono 
+                                sulle parti vuote ai margini delle pagine stesse.</p>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <p>Il diario è stato scritto da <persName ref="#EA">Emanuele Artom</persName> ad eccezione delle prime 2 pagine, 
+                            di cui una è la lettera originale della madre Amalia.</p>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <p>Questo diario è stato scritto tra <date when="1943-11">novembre 1943</date> e il <date when="1944-02-23">23 febbraio 1944</date>,
+                            durante l'esperienza partigiana di <persName ref="#EA">Emanuele Artom</persName>.</p>
+                        </origin>
+                    </history>
+                </msDesc>
+            </sourceDesc>        
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Il presente progetto è stato svolto per l'esame di Codifica di Testi.</p>
+            </projectDesc>
+            <editorialDecl>
+                <punctuation>
+                    <p>Sono stati mantenuti i segni di punteggiatura originali, qualora fossero abbastanza chiari da essere distinti.</p>
+                </punctuation>
+                <correction>
+                    <p>Gli errori riscontrati sono stati marcati con l'elemento <gi>sic</gi> e la corrispondente forma corretta è stata inserita di seguito all'interno dell'elemento <gi>corr</gi>.</p>
+                </correction>
+                <hyphenation>
+                    <p>La segmentazione sillabica nei ritorni a capo è stata mantenuta.</p>
+                </hyphenation>
+                <segmentation>
+                    <p>Il testo è stato segmentato in periodi, attraverso l'elemento <gi>ab</gi></p>
+                </segmentation>
+                <stdVals>
+                    <p>Il valore dell'attributo <att>when</att> all'interno dell'elemento <gi>date</gi> è stato disposto nell'ordine <val>AAAA-MM-GG</val>.</p>
+                </stdVals>
+                <interpretation>
+                    <p>I nomi di persona sono stati marcati con l'elemento <gi>persName</gi></p>
+                    <p>I nomi di luogo sono stati marcati con l'elemento <gi>placeName</gi></p>
+                    <p>Le date sono state marcate con l'elemento <gi>date</gi></p>
+                </interpretation> 
+                <normalization method="silent">
+                    <p>L'autore tende spesso a scrivere il puntino delle i più a destra della i stessa. Considerando questo aspetto ricorrente, i segni sono stati normalizzati.</p>
+                </normalization>               
+            </editorialDecl>
+            <charDecl>
+                <glyph xml:id="graveacc">
+                    <localProp name="name" value="accento grave basso"/>
+                    <mapping type="Unicode">0x316</mapping>
+                </glyph>
+
+                <glyph xml:id="bullet">
+                    <localProp name="name" value="punto pieno grassetto"/>
+                    <mapping type="Unicode">U+2022</mapping>
+                </glyph>
+
+                <glyph xml:id="ovalbold">
+                    <localProp name="name" value="ovale grassetto"/>
+                    <mapping type="Unicode">0x1d158</mapping> 
+                </glyph>
+            </charDecl>
+            <refsDecl>
+                <p>I riferimenti sono stati costruiti attraverso un collegamento tra gli attributi <att>xml:id</att> e <att>ref</att>.</p>
+            </refsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="EA">
+                        <persName>Emanuele Artom</persName>
+                        <birth>
+                            <date when="1915-06-23">23 giugno 1915</date>
+                        </birth>
+                        <death>
+                            <date when="1944-04-07">7 aprile 1944</date>
+                        </death>
+                    </person>
+                </listPerson>                
+            </particDesc>
+            <langUsage>
+                <language ident="ita">Italiano</language>
+                <language ident="la">Latino</language>
+                <language ident="pms">Piemontese</language>
+            </langUsage>
+            <textDesc>
+                <channel mode="w"/>
+                <constitution type="frags"/>
+                <derivation type="original"/>
+                <domain type="private"/>
+                <factuality type="fact"/>
+                <interaction type="none"/>
+                <preparedness type="none"/>
+                <purpose type="express"/> 
+            </textDesc>
+            <settingDesc>
+                <p>Testi scritti da <persName ref="#EA">Emanuele Artom</persName>
+                tra <date when="1943-11">novembre 1943</date> e il <date when="1944-02-23">23 febbraio 1944</date>.</p>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+
+    <facsimile>
+        <surface xml:id="p70">
+            <graphic url='p70.jpg' width='749px' height='1024px'/>
+            <zone ulx="13" uly="14" lrx="729" lry="1000"/>
+            <note>Pagina 70</note>
+            <zone xml:id="p70_l1" ulx="76" uly="63" lrx="667" lry="122"/>
+            <note>Linea 1</note>
+            <zone xml:id="p70_l2" ulx="76" uly="119" lrx="690" lry="174"/>
+            <note>Linea 2</note>
+            <zone xml:id="p70_l3" ulx="78" uly="163" lrx="669" lry="212"/>
+            <note>Linea 3</note>
+            <zone xml:id="p70_l4" ulx="77" uly="202" lrx="667" lry="248"/>
+            <note>Linea 4</note>
+            <zone xml:id="p70_l5" ulx="78" uly="236" lrx="674" lry="284"/>
+            <note>Linea 5</note>
+            <zone xml:id="p70_l6" ulx="77" uly="274" lrx="675" lry="318"/>
+            <note>Linea 6</note>
+            <zone xml:id="p70_l7" ulx="67" uly="310" lrx="671" lry="363"/>
+            <note>Linea 7</note>
+            <zone xml:id="p70_l8" ulx="71" uly="353" lrx="674" lry="404"/>
+            <note>Linea 8</note>
+            <zone xml:id="p70_l9" ulx="78" uly="391" lrx="666" lry="431"/>
+            <note>Linea 9</note>
+            <zone xml:id="p70_l10" ulx="67" uly="431" lrx="676" lry="475"/>
+            <note>Linea 10</note>
+            <zone xml:id="p70_l11" ulx="77" uly="471" lrx="665" lry="514"/>
+            <note>Linea 11</note>
+            <zone xml:id="p70_l12" ulx="71" uly="508" lrx="669" lry="550"/>
+            <note>Linea 12</note>
+            <zone xml:id="p70_l13" ulx="76" uly="551" lrx="669" lry="595"/>
+            <note>Linea 13</note>
+            <zone xml:id="p70_l14" ulx="72" uly="592" lrx="676" lry="633"/>
+            <note>Linea 14</note>
+            <zone xml:id="p70_l15" ulx="73" uly="636" lrx="672" lry="665"/>
+            <note>Linea 15</note>
+            <zone xml:id="p70_l16" ulx="75" uly="672" lrx="673" lry="702"/>
+            <note>Linea 16</note>
+            <zone xml:id="p70_l17" ulx="75" uly="709" lrx="672" lry="743"/>
+            <note>Linea 17</note>
+            <zone xml:id="p70_l18" ulx="75" uly="748" lrx="670" lry="783"/>
+            <note>Linea 18</note>
+            <zone xml:id="p70_l19" ulx="75" uly="789" lrx="675" lry="819"/>
+            <note>Linea 19</note>
+            <zone xml:id="p70_l20" ulx="77" uly="827" lrx="671" lry="859"/>
+            <note>Linea 20</note>
+            <zone xml:id="p70_l21" ulx="75" uly="867" lrx="676" lry="903"/>
+            <note>Linea 21</note>
+            <zone xml:id="p70_l22" ulx="78" uly="909" lrx="677" lry="942"/>
+            <note>Linea 22</note>
+        </surface>
+        <surface xml:id="p71">
+        <graphic url='p71.jpg' width='749px' height='1024px'/>
+            <zone ulx="25" uly="17" lrx="747" lry="1010"/>
+            <note>Pagina 71</note>
+            <zone xml:id="p71_l1" ulx="87" uly="78" lrx="680" lry="118"/>
+            <note>Linea 1</note>
+            <zone xml:id="p71_l2" ulx="84" uly="125" lrx="685" lry="170"/>
+            <note>Linea 2</note>
+            <zone xml:id="p71_l3" ulx="84" uly="174" lrx="681" lry="195"/>
+            <note>Linea 3</note>
+            <zone xml:id="p71_l4" ulx="87" uly="207" lrx="681" lry="238"/>
+            <note>Linea 4</note>
+            <zone xml:id="p71_l5" ulx="88" uly="247" lrx="679" lry="276"/>
+            <note>Linea 5</note>
+            <zone xml:id="p71_l6" ulx="85" uly="284" lrx="692" lry="312"/>
+            <note>Linea 6</note>
+            <zone xml:id="p71_l7" ulx="85" uly="323" lrx="702" lry="363"/>
+            <note>Linea 7</note>
+            <zone xml:id="p71_l8" ulx="87" uly="367" lrx="686" lry="403"/>
+            <note>Linea 8</note>
+            <zone xml:id="p71_l9" ulx="87" uly="406" lrx="683" lry="437"/>
+            <note>Linea 9</note>
+            <zone xml:id="p71_l10" ulx="86" uly="440" lrx="679" lry="479"/>
+            <note>Linea 10</note>
+            <zone xml:id="p71_l11" ulx="87" uly="482" lrx="689" lry="513"/>
+            <note>Linea 11</note>
+            <zone xml:id="p71_l12" ulx="88" uly="518" lrx="681" lry="551"/>
+            <note>Linea 12</note>
+            <zone xml:id="p71_l13" ulx="86" uly="553" lrx="673" lry="586"/>
+            <note>Linea 13</note>
+            <zone xml:id="p71_l14" ulx="86" uly="591" lrx="676" lry="630"/>
+            <note>Linea 14</note>
+            <zone xml:id="p71_l15" ulx="87" uly="638" lrx="679" lry="666"/>
+            <note>Linea 15</note>
+            <zone xml:id="p71_l16" ulx="82" uly="673" lrx="679" lry="710"/>
+            <note>Linea 16</note>
+            <zone xml:id="p71_l17" ulx="83" uly="717" lrx="675" lry="746"/>
+            <note>Linea 17</note>
+            <zone xml:id="p71_l18" ulx="84" uly="751" lrx="674" lry="785"/>
+            <note>Linea 18</note>
+            <zone xml:id="p71_l19" ulx="85" uly="786" lrx="670" lry="820" />
+            <note>Linea 19</note>
+            <zone xml:id="p71_l20" ulx="85" uly="823" lrx="675" lry="860"/>
+            <note>Linea 20</note>
+            <zone xml:id="p71_l21" ulx="87" uly="863" lrx="671" lry="894"/>
+            <note>Linea 21</note>
+            <zone xml:id="p71_l22" ulx="84" uly="902" lrx="671" lry="939"/>
+            <note>Linea 22</note>
+            <zone xml:id="add1" ulx="507" uly="376" lrx="743" lry="430"/>
+            <note>Aggiunta testuale</note>
+            <metamark target="#mark1">Parentesi graffa che segnala l'aggiunta testuale</metamark>
+        </surface>
+        <surface xml:id="p72">
+            <graphic url='72.jpeg' width='753px' height='1024px'/>
+            <zone ulx="25" uly="14" lrx="725" lry="1002"/>
+                <note>Pagina 72</note>
+            <zone xml:id="p72_l1" ulx="70" uly="79" lrx="665" lry="122"/>
+                <note>Linea 1</note>
+            <zone xml:id="p72_l2" ulx="70" uly="122" lrx="659" lry="158"/>
+                <note>Linea 2</note>
+            <zone xml:id="p72_l3" ulx="71" uly="162" lrx="667" lry="194"/>
+                <note>Linea 3</note>
+            <zone xml:id="p72_l4" ulx="73" uly="198" lrx="663" lry="235"/>
+                <note>Linea 4</note>
+            <zone xml:id="p72_l5" ulx="75" uly="240" lrx="660" lry="272"/>
+                <note>Linea 5</note>
+            <zone xml:id="p72_l6" ulx="74" uly="278" lrx="664" lry="313"/>
+                <note>Linea 6</note>
+            <zone xml:id="p72_l7" ulx="74" uly="315" lrx="663" lry="355"/>
+                <note>Linea 7</note>
+            <zone xml:id="p72_l8" ulx="72" uly="361" lrx="667" lry="390"/>
+                <note>Linea 8</note>
+            <zone xml:id="p72_l9" ulx="72" uly="396" lrx="663" lry="427"/>
+                <note>Linea 9</note>
+            <zone xml:id="p72_l10" ulx="68" uly="434" lrx="667" lry="468"/>
+                <note>Linea 10</note>
+            <zone xml:id="p72_l11" ulx="65" uly="474" lrx="666" lry="505"/>
+                <note>Linea 11</note>
+            <zone xml:id="p72_l12" ulx="71" uly="508" lrx="676" lry="546"/>
+                <note>Linea 12</note>
+            <zone xml:id="p72_l13" ulx="71" uly="551" lrx="677" lry="591"/>
+                <note>Linea 13</note>
+            <zone xml:id="p72_l14" ulx="71" uly="595" lrx="661" lry="623"/>
+                <note>Linea 14</note>
+            <zone xml:id="p72_l15" ulx="69" uly="627" lrx="660" lry="672"/>
+                <note>Linea 15</note>
+            <zone xml:id="p72_l16" ulx="67" uly="661" lrx="664" lry="699"/>
+                <note>Linea 16</note>
+            <zone xml:id="p72_l17" ulx="67" uly="702" lrx="666" lry="754"/>
+                <note>Linea 17</note>
+            <zone xml:id="p72_l18" ulx="64" uly="738" lrx="669" lry="780"/>
+                <note>Linea 18</note>
+            <zone xml:id="p72_l19" ulx="67" uly="782" lrx="658" lry="816"/>
+                <note>Linea 19</note>
+            <zone xml:id="p72_l20" ulx="70" uly="822" lrx="661" lry="853"/>
+                <note>Linea 20</note>
+            <zone xml:id="p72_l21" ulx="68" uly="855" lrx="660" lry="893"/>
+                <note>Linea 21</note>
+            <zone xml:id="p72_l22" ulx="71" uly="899" lrx="664" lry="935"/>
+                <note>Linea 22</note>
+        </surface>
+        <surface xml:id="p73">
+            <graphic url='73.jpeg' width='751px' height='1024px' />
+            <zone ulx="17" uly="30" lrx="739" lry="1008" /> 
+                <note>Pagina 73</note>
+            <zone xml:id="p73_l1" ulx="99" uly="81" lrx="681" lry="116"/>
+                <note>Linea 1</note>
+            <zone xml:id="p73_l2" ulx="99" uly="113" lrx="679" lry="153"/>
+                <note>Linea 2</note>
+            <zone xml:id="p73_l3" ulx="98" uly="151" lrx="700" lry="193"/>
+                <note>Linea 3</note>
+            <zone xml:id="p73_l4" ulx="100" uly="190" lrx="697" lry="232"/>
+                <note>Linea 4</note>
+            <zone xml:id="p73_l5" ulx="99" uly="230" lrx="679" lry="271"/>
+                <note>Linea 5</note>
+            <zone xml:id="p73_l6" ulx="99" uly="268" lrx="704" lry="308"/>
+                <note>Linea 6</note>
+            <zone xml:id="p73_l7" ulx="99" uly="307" lrx="713" lry="350"/>
+                <note>Linea 7</note>
+            <zone xml:id="p73_l8" ulx="99" uly="345" lrx="679" lry="386"/>
+                <note>Linea 8</note>
+            <zone xml:id="p73_l9" ulx="99" uly="384" lrx="718" lry="430"/>
+                <note>Linea 9</note>
+            <zone xml:id="p73_l10" ulx="99" uly="423" lrx="679" lry="463"/>
+                <note>Linea 10</note>
+            <zone xml:id="p73_l11" ulx="99" uly="461" lrx="679" lry="503"/>
+                <note>Linea 11</note>
+            <zone xml:id="p73_l12" ulx="99" uly="501" lrx="679" lry="544"/>
+                <note>Linea 12</note>
+            <zone xml:id="p73_l13" ulx="99" uly="541" lrx="678" lry="581"/>
+                <note>Linea 13</note>
+            <zone xml:id="p73_l14" ulx="100" uly="578" lrx="679" lry="620"/>
+                <note>Linea 14</note>
+            <zone xml:id="p73_l15" ulx="99" uly="618" lrx="678" lry="659"/>
+                <note>Linea 15</note>
+            <zone xml:id="p73_l16" ulx="100" uly="656" lrx="678" lry="697"/>
+                <note>Linea 16</note>
+            <zone xml:id="p73_l17" ulx="100" uly="695" lrx="679" lry="736"/>
+                <note>Linea 17</note>
+            <zone xml:id="p73_l18" ulx="99" uly="736" lrx="693" lry="777"/>
+                <note>Linea 18</note>
+            <zone xml:id="p73_l19" ulx="99" uly="773" lrx="679" lry="814"/>
+                <note>Linea 19</note>
+            <zone xml:id="p73_l20" ulx="98" uly="812" lrx="678" lry="853"/>
+                <note>Linea 20</note>
+            <zone xml:id="p73_l21" ulx="98" uly="850" lrx="678" lry="892"/>
+                <note>Linea 21</note>
+            <zone xml:id="p73_l22" ulx="99" uly="889" lrx="679" lry="933"/>
+                <note>Linea 22</note>
+            <zone xml:id="add2" ulx="641" uly="783" lrx="711" lry="798" />
+                <note>Aggiunta testuale</note>
+                <metamark target="#mark2">Riga che segnala il continuo della frase</metamark>
+        </surface>
+
+        <surface xml:id="p74">
+            <graphic url='74.jpeg' width='754px' height='1024px'/>
+            <zone ulx="16" uly="18" lrx="728" lry="1005"/>
+                <note>Pagina 74</note>
+            <zone xml:id="p74_l1" ulx="85" uly="84" lrx="666" lry="112"/>
+                <note>Linea 1</note>
+            <zone xml:id="p74_l2" ulx="84" uly="111" lrx="665" lry="151"/>
+                <note>Linea 2</note>
+            <zone xml:id="p74_l3" ulx="85" uly="151" lrx="664" lry="190"/>
+                <note>Linea 3</note>
+            <zone xml:id="p74_l4" ulx="87" uly="189" lrx="666" lry="230"/>
+                <note>Linea 4</note>
+            <zone xml:id="p74_l5" ulx="85" uly="230" lrx="666" lry="266"/>
+                <note>Linea 5</note>
+            <zone xml:id="p74_l6" ulx="86" uly="267" lrx="690" lry="313"/>
+                <note>Linea 6</note>
+            <zone xml:id="p74_l7" ulx="86" uly="310" lrx="667" lry="347"/>
+                <note>Linea 7</note>
+            <zone xml:id="p74_l8" ulx="86" uly="350" lrx="721" lry="385"/>
+                <note>Linea 8</note>
+            <zone xml:id="p74_l9" ulx="86" uly="384" lrx="724" lry="430"/>
+                <note>Linea 9</note>
+            <zone xml:id="p74_l10" ulx="86" uly="427" lrx="667" lry="463"/>
+                <note>Linea 10</note>
+            <zone xml:id="p74_l11" ulx="86" uly="461" lrx="669" lry="502"/>
+                <note>Linea 11</note>
+            <zone xml:id="p74_l12" ulx="87" uly="500" lrx="666" lry="540"/>
+                <note>Linea 12</note>
+            <zone xml:id="p74_l13" ulx="87" uly="540" lrx="667" lry="578"/>
+                <note>Linea 13</note>
+            <zone xml:id="p74_l14" ulx="87" uly="580" lrx="665" lry="617"/>
+                <note>Linea 14</note>
+            <zone xml:id="p74_l15" ulx="86" uly="617" lrx="666" lry="658"/>
+                <note>Linea 15</note>
+            <zone xml:id="p74_l16" ulx="87" uly="656" lrx="670" lry="696"/>
+                <note>Linea 16</note>
+            <zone xml:id="p74_l17" ulx="86" uly="695" lrx="672" lry="736"/>
+                <note>Linea 17</note>
+            <zone xml:id="p74_l18" ulx="87" uly="736" lrx="673" lry="772"/>
+                <note>Linea 18</note>
+            <zone xml:id="p74_l19" ulx="86" uly="771" lrx="684" lry="816"/>
+                <note>Linea 19</note>
+            <zone xml:id="p74_l20" ulx="87" uly="811" lrx="688" lry="852"/>
+                <note>Linea 20</note>
+            <zone xml:id="p74_l21" ulx="87" uly="852" lrx="672" lry="890"/>
+                <note>Linea 21</note>
+            <zone xml:id="p74_l22" ulx="87" uly="890" lrx="668" lry="929"/>
+                <note>Linea 22</note>
+        </surface>
+    </facsimile>
+    
+    <text xml:lang="ita" xml:id="pag_70_71_72_73_74">
+        <body>
+            <div>
+                <pb facs="#70" n="70"/> 
+                    <lb xml:id="p70l1" n="1" facs="#p70_l1"/>
+                    <dateline xml:id="data16">
+                        <date when="---16">16</date>
+                    </dateline>
+                    <certainty target="#data16" locus="name">
+                        <desc>Non è chiaro se questo numero rappresenti una data, oppure un'indicizzazione del diario. 
+                            La tendenza sarebbe quella a ritenerlo una data, perchè, considerando il contesto generale delle pagine, 
+                            sembrerebbe appartenere ad uno schema di suddivisione in giorni. 
+                            L'idea trova per noi conferma nelle pagine successive, dove compare un numero 18 seguito da una precisazione in cui l'autore afferma di non aver scritto il giorno precedente, 
+                            confermando la mancanza di pagine precedenti col numero 17.
+                        </desc> 
+                    </certainty>
+                <ab type="period" xml:id="pag70_p1" n="1">
+                    <lb xml:id="p70l2" n="2" facs="#p70_l2"/>
+                    Grandine grossa<pc>,</pc> acqua tinta e neve
+                    <lb xml:id="p70l3" n="3" facs="#p70_l3"/>
+                    per l'<foreign xml:lang="la">aer</foreign> tenebroso si riversa<pc>;</pc> 
+                    <lb xml:id="p70l4" n="4" facs="#p70_l4"/>
+                    forse la citazione ha un sapore un 
+                    <lb xml:id="p70l5" n="5" facs="#p70_l5"/>
+                    <unclear reason="illegible" cert="low">
+                        <choice>
+                            <sic>po</sic>
+                            <corr>po'</corr>
+                        </choice>
+                    </unclear>
+                    letterario<pc>,</pc> ma in questa vita 
+                    <lb xml:id="p70l6" n="6" facs="#p70_l6"/>
+                    di strapazzi qualche po' di lette<pc type="syllabication">=</pc>
+                    <lb xml:id="p70l7" n="7" facs="#p70_l7" break="no"/>
+                    ratura ha <subst><del rend="overstrike">il</del> <add hand="#EA" place="above">un</add></subst> fascino <del rend="overstrike">di un</del> ri<pc type="syllabication" rend="light">=</pc>
+                    <lb xml:id="p70l8" n="8" facs="#p70_l8" break="no"/>
+                    posante<pc>.</pc>
+                </ab>
+                <ab type="period" xml:id="pag70_p2" n="2">
+                    Almeno mi pareva di 
+                    <lb xml:id="p70l9" n="9" facs="#p70_l9"/>
+                    essere come <persName>Ciacco</persName>
+                    <choice>
+                        <sic>stassera</sic>
+                        <corr>stasera</corr> 
+                    </choice><pc>,</pc> 
+                    <lb xml:id="p70l10" n="10" facs="#p70_l10"/>
+                    pochi minuti fa<pc>,</pc> quando torna <g type="syllabication" ref="#graveacc"> ̖ </g>
+                    <lb xml:id="p70l11" n="11" facs="#p70_l11" break="no"/>
+                    vo in albergo dopo aver cam<pc type="syllabication" rend="light">=</pc>
+                    <lb xml:id="p70l12" n="12" facs="#p70_l12" break="no"/>
+                    minato per ore al buio<pc>,</pc> perden<pc type="syllabication" rend="light below">=</pc>
+                    <lb xml:id="p70l13" n="13" facs="#p70_l13"/>
+                    domi e disperdendomi per la 
+                    <lb xml:id="p70l14" n="14" facs="#p70_l14"/>
+                    campagna<pc>,</pc> sotto una pioggia 
+                    <lb xml:id="p70l15" n="15" facs="#p70_l15"/>
+                    continua<pc>,</pc> affondando nel 
+                    <lb xml:id="p70l16" n="16" facs="#p70_l16"/>
+                    fango e nella fanghiglia<pc>,</pc> col 
+                    <lb xml:id="p70l17" n="17" facs="#p70_l17"/>
+                    berretto che perdeva il colore 
+                    <lb xml:id="p70l18" n="18" facs="#p70_l18"/>
+                    e stillava gocciole turchine lungo
+                    <lb xml:id="p70l19" n="19" facs="#p70_l19"/>
+                    le 
+                    <choice>
+                        <sic>guancie</sic>
+                        <corr>guance</corr>
+                    </choice> 
+                    fino al collo<pc>.</pc>
+                </ab> 
+                <ab type="period" xml:id="pag70_p3" n="3">
+                    Sono 
+                    <lb xml:id="p70l20" n="20" facs="#p70_l20"/>
+                    tre giorni che non scrivo<pc>.</pc>
+                </ab>
+                <ab type="period" xml:id="pag70_p4" n="4">
+                    Tre
+                    <lb xml:id="p70l21" n="21" facs="#p70_l21"/>
+                    <w rend="faded">giorni</w> fa mi alzai alle <time when="03:45:00">3 e 
+                    <lb xml:id="p70l22" n="22" facs="#p70_l22"/>
+                    3 quarti</time> e partii per casa<pc>.</pc> 
+                </ab>
+
+
+                <pb facs="#71" n="71"/>
+                <ab type="period" xml:id="pag71_p1" n="5">
+                    <lb xml:id="p71l1" n="23" facs="#p71_l1"/>
+                    Una volta alzarmi nella notte
+                    <lb xml:id="p71l2" n="24" facs="#p71_l2"/>
+                    mi sarebbe parso <c rend="scribble">u</c>na disgrazia<pc>,</pc> 
+                    <lb xml:id="p71l3" n="25" facs="#p71_l3"/>
+                    mentre ora non mi preoccupa più<pc>:</pc> 
+                    <lb xml:id="p71l4" n="26" facs="#p71_l4"/>
+                    quando penso al fastidio e alla 
+                    <lb xml:id="p71l5" n="27" facs="#p71_l5"/>
+                    pena che l'anno scorso mi davano
+                    <lb xml:id="p71l6" n="28" facs="#p71_l6"/>
+                    i disagi dello sfollamento a <placeName><settlement type="municipality">Mo<pc type="syllabication">=</pc> 
+                    <lb xml:id="p71l7" n="29" facs="#p71_l7"/>
+                    riondo</settlement></placeName> <pc force="weak">-</pc> freddo<pc>,</pc> arrembaggi nella
+                    <lb xml:id="p71l8" n="30" facs="#p71_l8"/>
+                    corriera <add hand="#EA" place="above">zeppa</add><pc>,</pc>  ritardi nei treni <add hand="#EA" place="below" facs="#add1" xml:id="mark1"><unclear reason="illegible" cert="low">trasporti</unclear> di valigie</add> <unclear reason="illegible" cert="low">e</unclear> 
+                    <lb xml:id="p71l9" n="31" facs="#p71_l9"/>
+                    non riesco a capacitarmene<pc>,</pc> <w rend="descending">eppure</w>
+                    <lb xml:id="p71l10" n="32" facs="#p71_l10"/>
+                    erano <del rend="overstrike">disa</del> fastidi e pene 
+                    ver<subst> 
+                        <del>e</del>
+                        <add>i</add>
+                    </subst><pc>,</pc> 
+                    <lb xml:id="p71l11" n="33" facs="#p71_l11"/>
+                    sinceramente e duramente sofferti<pc>.</pc> 
+                </ab>
+                <ab type="period" xml:id="pag71_p2" n="6">
+                    <lb xml:id="p71l12" n="34" facs="#p71_l12"/>
+                    Il viaggio si svolse senza incidenti<pc>.</pc> 
+                </ab>
+                <ab type="period" xml:id="pag71_p3" n="7">
+                    <lb xml:id="p71l13" n="35" facs="#p71_13"/>
+                    Un conoscente stupido mi fermò
+                    <lb xml:id="p71l14" n="36" facs="#p71_l14"/>
+                    in corridoio dicendomi<pc>:</pc> <said>attento<pc>,</pc>
+                    <lb xml:id="p71l15" n="37" facs="#p71_l15"/>
+                    sei in pericolo</said><pc>,</pc> come se non lo
+                    <lb xml:id="p71l16" n="38" facs="#p71_l16"/>
+                    sapessi anch'io e le sue <unclear reason="ink blot">sciocche</unclear>
+                    <lb xml:id="p71l17" n="39" facs="#p71_l17"/>
+                    parole non <g ref="#bullet">•</g> potessero <g ref="#bullet">•</g> servire a 
+                    <lb xml:id="p71l18" n="40" facs="#p71_l18"/>
+                    attirare su di me sgradite at<pc type="syllabication" rend="light">=</pc>
+                    <lb xml:id="p71l19" n="41" facs="#p71_l19" break="no"/>
+                    tenzioni<pc>.</pc>
+                </ab> 
+                <ab type="period" xml:id="pag71_72_p4" n="8">
+                    Invece quando sulla 
+                    <lb xml:id="p71l20" n="42" facs="#p71_l20"/>
+                    corriera<pc>,</pc> pagando il biglietto<pc>,</pc> 
+                    <lb xml:id="p71l21" n="43" facs="#p71_l21"/>
+                    misi l'indice sulle labbra<pc>,</pc> la
+                    <lb xml:id="p71l22" n="44" facs="#p71_l22"/>
+                    signorina mi chiese se avevo bi<pc type="syllabication">=</pc>
+
+                    <pb facs="#72" n="72"/>
+                    <lb xml:id="p72l1" n="45" facs="#p72_l1" break="no"/>
+                    sogno di qualche cosa e mi promise 
+                    <lb xml:id="p72l2" n="46" facs="#p72_l2"/>
+                    di tacere<pc>.</pc>
+                </ab>
+                <ab type="period" xml:id="pag72_p1" n="9">
+                    A <abbr type="geographic">C</abbr><pc>.</pc> trovai gli amici che 
+                    <lb xml:id="p72l3" n="47" facs="#p72_l3"/>
+                    mi condussero in famiglia<pc>.</pc>
+                </ab>
+                <ab type="period" xml:id="pag72_p2" n="10">                
+                    Un bel 
+                    <lb xml:id="p72l4" n="48" facs="#p72_l4"/>
+                    tratto di stradone<pc>,</pc> poi in un viottolo
+                    <lb xml:id="p72l5" n="49" facs="#p72_l5"/>
+                    in collina<pc>,</pc> che conduce in una sper<pc type="syllabication">=</pc>
+                    <lb xml:id="p72l6" n="50" facs="#p72_l6" break="no"/>
+                    duta cascina<pc>.</pc>
+                </ab> 
+                <ab type="period" xml:id="pag72_p3" n="11"> 
+                    La mamma mi vide 
+                    <lb xml:id="p72l7" n="51" facs="#p72_l7"/>
+                    da lontano e mi corse incontro felice<pc>,</pc> 
+                    <lb xml:id="p72l8" n="52" facs="#p72_l8"/>
+                    come da anni non la vedevo<pc>.</pc>
+                </ab>
+                <ab type="period" xml:id="pag72_p4" n="12"> 
+                    Per 
+                    <lb xml:id="p72l9" n="53" facs="#p72_l9"/>
+                    un fenomeno di telepatia proprio dal 
+                    <lb xml:id="p72l10" n="54" facs="#p72_l10"/>
+                    pomeriggio prima<pc>,</pc> quando avevo de<pc type="syllabication" rend="light">=</pc> 
+                    <lb xml:id="p72l11" n="55" facs="#p72_l11" break="no"/>
+                    ciso di partire<pc>,</pc> aveva cominciato
+                    <lb xml:id="p72l12" n="56" facs="#p72_l12"/>
+                    ad aspettarmi<pc>;</pc> la sera era andata 
+                    <lb xml:id="p72l13" n="57" facs="#p72_l13"/>
+                    a letto più tardi pensando che sarei 
+                    <lb xml:id="p72l14" n="58" facs="#p72_l14"/>
+                    arrivato<pc>,</pc> la mattina si era sve<pc type="syllabication">=</pc>
+                    <lb xml:id="p72l15" n="59" facs="#p72_l15" break="no"/>
+                    gliata più presto<pc>.</pc>
+                </ab>
+                <ab type="period" xml:id="pag72_p5" n="13"> 
+                    I partigiani del 
+                    <lb xml:id="p72l16" n="60" facs="#p72_l16"/>
+                    luogo li hanno aiutati in ogni 
+                    <lb xml:id="p72l17" n="61" facs="#p72_l17"/>
+                    modo<pc>,</pc> hanno trovato il rifugio<pc>,</pc>
+                    <lb xml:id="p72l18" n="62" facs="#p72_l18"/>
+                    curato il trasloco<pc>,</pc> promesso carte
+                    <lb xml:id="p72l19" n="63" facs="#p72_l19"/>
+                    di identità<pc>.</pc>
+                </ab> 
+                <ab type="period" xml:id="pag72_73_p6" n="14"> 
+                    Chi fece il trasloco
+                    <lb xml:id="p72l20" n="64" facs="#p72_l20"/>
+                    non voleva farsi pagare<pc>,</pc> poi 
+                    <lb xml:id="p72l21" n="65" facs="#p72_l21"/>
+                    accettò il prezzo<pc>,</pc> ma lo versò
+                    <lb xml:id="p72l22" n="66" facs="#p72_l22"/>
+                    subito nelle casse del <orgName type="politycal">Fronte Na<pc type="syllabication">=</pc>
+
+
+                    <pb facs="#73" n="73"/>
+                    <lb xml:id="p73l1" n="67" facs="#p73_l1" break="no"/>
+                    zionale</orgName><pc>.</pc>
+                </ab> 
+                <ab type="period" xml:id="pag73_p1" n="15">
+                    Bisogna scrivere questi 
+                    <lb xml:id="p73l2" n="68" facs="#p73_l2"/>
+                    episodi<pc>,</pc> perché dopo tanti anni 
+                    <lb xml:id="p73l3" n="69" facs="#p73_l3"/>
+                    di a<add hand="EA" place="above">b</add>biezione<pc>,</pc> <c rend="scribble" cert="low">g</c> essi testimoniano
+                    <lb xml:id="p73l4" n="70" facs="#p73_l4"/>
+                    soli il sentimento di questo povero
+                    <lb xml:id="p73l5" n="71" facs="#p73_l5"/>
+                    popolo italiano<pc>.</pc>
+                </ab> 
+                <ab type="period" xml:id="pag73_p2" n="16"> 
+                    <del rend="overstrike">Anche <c rend="shaded">a</c> <abbr type="geographic">C</abbr><pc>.</pc></del>
+                    <lb xml:id="p73l6" n="72" facs="#p73_l6"/>
+                    La casa a me parve <c rend="ink blot">c</c>omoda<pc>,</pc>
+                    <lb xml:id="p73l7" n="73" facs="#p73_l7"/>
+                    dopo le sistemazioni di questi
+                    <lb xml:id="p73l8" n="74" facs="#p73_l8"/>
+                    mesi<pc>:</pc> fa caldo<pc>,</pc> ci sono tavole
+                    <lb xml:id="p73l9" n="75" facs="#p73_l9"/>
+                    e sedie<pc>,</pc> si mangia in una chiara 
+                    <lb xml:id="p73l10" n="76" facs="#p73_l10"/>
+                    cucina pulita<pc>,</pc> si dorme in 
+                    <lb xml:id="p73l11" n="77" facs="#p73_l11"/>
+                    un soffice letto di legno con
+                    <lb xml:id="p73l12" n="78" facs="#p73_l11"/>
+                    due materassi<pc>.</pc> La nonna vive
+                    <lb xml:id="p73l13" n="79" facs="#p73_l13"/>
+                    in mezzo a tre gatti e ha una 
+                    <lb xml:id="p73l14" n="80" facs="#p73_l14"/>
+                    grande paura<pc>.</pc>
+                </ab>
+                <ab type="period" xml:id="pag73_p3" n="17"> 
+                    <add place="above margin" facs="add2" xml:id="mark2">La sua principale occupazione consiste nel protestare e dire<pc>:</pc> <unclear reason="illegible" cert="low">ai</unclear> <gap reason="illegible" extent="1" unit="word"/>  l'ha <foreign xml:lang="pms">desmentiame</foreign></add>
+                    Si passano le 
+                    <lb xml:id="p73l15" n="81" facs="#p73_l15"/>
+                    sere in una <g ref="#ovalbold">𝅘</g> stalla pulita
+                    <lb xml:id="p73l16" n="82" facs="#p73_l16"/>
+                    e comoda<pc>;</pc> dove una enorme 
+                    <lb xml:id="p73l17" n="83" facs="#p73_l17"/>
+                    mucca bianca lecca affettuosamente
+                    <lb xml:id="p73l18" n="84" facs="#p73_l18"/>
+                    <subst><del>un</del> <add hand="EA" place="above">il suo</add></subst> vitellino<pc>,</pc> partorito da una setti<pc type="syllabication">=</pc>
+                    <lb xml:id="p73l19" n="85" facs="#p73_l19" break="no"/>
+                    mana<pc>.</pc> 
+                </ab>
+                <ab type="period" xml:id="pag73_p4" n="18"> 
+                    Potrò mai rivivere un 
+                    <lb xml:id="p73l20" n="86" facs="#p73_l20"/>
+                    periodo di pari riposante se<pc type="syllabication">=</pc>
+                    <lb xml:id="p73l21" n="87" facs="#p73_l21" break="no"/>
+                    renità<pc>?</pc>
+                </ab> 
+                <ab type="period" xml:id="pag73_74_p5" n="19">
+                    Avevo persuaso ormai
+                    <lb xml:id="p73l22" n="88" facs="#p73_l22"/>
+                    papà a venire con me e la
+
+                    <pb facs="#74" n="74"/> 
+                    <lb xml:id="p74l1" n="89" facs="#p74_l1"/>
+                    nonna si sarebbe rassegnata 
+                    <lb xml:id="p74l2" n="90" facs="#p74_l2"/>
+                    a vivere in un ritiro<pc>,</pc> mentre la
+                    <lb xml:id="p74l3" n="91" facs="#p74_l3"/>
+                    mamma avrebbe girato<pc>,</pc> quando 
+                    <lb xml:id="p74l4" n="92" facs="#p74_l4"/>
+                    <distinct type="archaic">stamane</distinct> il <roleName role="commander">Comandante</roleName> mi disse
+                    <lb xml:id="p74l5" n="93" facs="#p74_l5"/>
+                    di aver già trovato un altro 
+                    <lb xml:id="p74l6" n="94" facs="#p74_l6"/>
+                    aiutante maggiore<pc>.</pc>
+                </ab>
+                <ab type="period" xml:id="pag74_p1" n="20"> 
+                    Ho dovuto scrivere
+                    <lb xml:id="p74l7" n="95" facs="#p74_l7"/>
+                    <num>2</num> lettere per avvertire papà di 
+                    <lb xml:id="p74l8" n="96" facs="#p74_l8"/>
+                    non venire<pc>,</pc> e mi rincresce<pc>,</pc> 
+                    <choice>
+                        <sic>perchè</sic>
+                        <corr>perché</corr>
+                    </choice>
+                    <lb xml:id="p74l9" n="97" facs="#p74_l9"/>
+                    non so come supereranno la <w rend="descending">prossima</w>
+                    <lb xml:id="p74l10" n="98" facs="#p74_l10"/>
+                    crisi<pc>.</pc>
+                </ab>
+                <ab type="period" xml:id="pag74_p2" n="21"> 
+                    La guerra durerà fino al
+                    <lb xml:id="p74l11" n="99" facs="#p74_l11"/>
+                    prossimo autunno e non avranno 
+                    <lb xml:id="p74l12" n="100" facs="#p74_l12"/>
+                    <choice>
+                        <sic>nè</sic>
+                        <corr>né</corr>
+                    </choice> 
+                    le tessere<pc>,</pc>
+                    <choice>
+                        <sic>nè</sic>
+                        <corr>né</corr>
+                    </choice> 
+                    sicurezza al<pc type="syllabication">=</pc>
+                    <lb xml:id="p74l13" n="101" facs="#p74_l13" break="no"/>
+                    cuna di vita<pc>;</pc> non solo<pc>,</pc> ma nel
+                    <lb xml:id="p74l14" n="102" facs="#p74_l14"/>
+                    primo periodo di pace ci sarà
+                    <lb xml:id="p74l15" n="103" facs="#p74_l15"/>
+                    una forte crisi e il governo non
+                    <lb xml:id="p74l16" n="104" facs="#p74_l16"/>
+                    potrà abbandonare i partigiani<pc>.</pc>
+                    <lb xml:id="p74l17" n="105" facs="#p74_l17"/>
+                    Nella sistemazione degli ex com<pc type="syllabication">=</pc>
+                    <lb xml:id="p74l18" n="106" facs="#p74_l18" break="no"/>
+                    battenti<pc>,</pc> da cui non potrà prescin<pc type="syllabication">=</pc>
+                    <lb xml:id="p74l19" n="107" facs="#p74_l19" break="no"/>
+                    dere<pc>,</pc> dovremo tenere il primo posto<pc>.</pc>
+                </ab>
+                <ab type="period" xml:id="pag74_p3" n="22"> 
+                    <lb xml:id="p74l20" n="108" facs="#p74_l20"/>
+                    A casa esprimo sempre questi <unclear reason="illegible" cert="low">motivi</unclear>
+                    <lb xml:id="p74l21" n="109" facs="#p74_l21"/>
+                    egoistici e pratici della necessità
+                    <lb xml:id="p74l22" n="110" facs="#p74_l22"/>
+                    di <del type="truncation" rend="overstrike">combatt</del> gettarsi tutti dalla 
+                </ab>
+            </div>
+        </body>
+    </text>
+</TEI>

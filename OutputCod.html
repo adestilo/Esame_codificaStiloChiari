@@ -1,0 +1,447 @@
+<!DOCTYPE HTML><html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Versione elettronica degli scritti autografi di Emanuele Artom</title><script src="https://code.jquery.com/jquery-3.2.1.js" crossorigin="anonymous"></script><link rel="stylesheet" type="text/css" href="./mystyleCod.css"><script src="gestoreCod.js"></script></head>
+   <body>
+      <div class="title">
+         <h1>IL DIARIO DI EMANUELE ARTOM</h1>
+      </div>
+      <div id="intro">
+         <div id="fileDesc">
+            <h2><b>Versione elettronica degli scritti autografi di Emanuele Artom</b></h2>
+            <h3>Responsabilità:</h3>
+            <div class="responsibility">
+               <p>Codificatori: Riccardo Chiari Adele Stilo </p>
+               <p>Coordinatore: Angelo Mario Del Grosso</p>
+            </div>
+            <h3>Pubblicazione:</h3>
+            <div class="pubblication">
+               <p>Luogo: Università di Pisa</p>
+               <p>Anno: 2023</p>
+               <p>Opera ad accesso libero</p>
+            </div>
+            <h3>La fonte:</h3>
+            <div class="source">
+               <p>
+                  <p>Luogo: Italia, Milano, Centro di Documentazione Ebraica Contemporanea</p>
+               </p>
+               <p>
+                  <p>Autore: Emanuele Artom</p>
+                  <p>Titolo: I diari di Emanuele Artom</p>
+               </p>
+               <p>
+                  <p>Descrizione del supporto: il diario consiste di 172 pagine di scritti autografi di Emanuele Artom introdotte da 2
+                     pagine, di cui una è la lettera originale della madre Amalia</p>
+               </p>
+               <p>Storia editoriale:
+                  Questo diario è stato scritto tra novembre 1943 e il 23 febbraio 1944,
+                  durante l'esperienza partigiana di Emanuele Artom.
+                  </p>
+            </div>
+         </div><button type="button" class="encoding">La fonte</button><h2 class="encodingDesc">Il file e la fonte</h2>
+         <div id="encodingDesc" class="encodingDesc">
+            <ul>
+               <p>Scopo: Il presente progetto è stato svolto per l'esame di Codifica di Testi.</p>
+               <li>Sono stati mantenuti i segni di punteggiatura originali, qualora fossero abbastanza
+                  chiari da essere distinti.</li>
+               <li>Gli errori riscontrati sono stati marcati con l'elemento sic e la corrispondente forma
+                  corretta è stata inserita di seguito all'interno dell'elemento corr.</li>
+               <li>La segmentazione sillabica nei ritorni a capo è stata mantenuta.</li>
+               <li>Il testo è stato segmentato in periodi, attraverso l'elemento ab</li>
+               <li>Il valore dell'attributo when all'interno dell'elemento date è stato disposto nell'ordine
+                  AAAA-MM-GG.</li>
+               <li>I nomi di persona sono stati marcati con l'elemento persName</li>
+               <li>I nomi di luogo sono stati marcati con l'elemento placeName</li>
+               <li>Le date sono state marcate con l'elemento date</li>
+               <li>L'autore tende spesso a scrivere il puntino delle i più a destra della i stessa. Considerando
+                  questo aspetto ricorrente, i segni sono stati normalizzati.</li>
+               <li>I riferimenti sono stati costruiti attraverso un collegamento tra gli attributi xml:id
+                  e ref.</li>
+            </ul>
+         </div><button type="button" class="profile">Aspetti non-bibliografici</button><div id="profileDesc">
+            <h2>Aspetti non-bibliografici</h2>
+            <h3>Persone presenti nel testo:</h3>
+            <div class="people"><u>Emanuele Artom</u><p>Nato il: 
+                  23 giugno 1915
+                  </p>
+               <p>Deceduto il:
+                  7 aprile 1944
+                  </p>
+            </div>
+            <h3>Varietà linguistiche presenti nel testo:</h3>
+            <div class="language">
+               <ul>
+                  <li>Italiano</li>
+                  <li>Latino</li>
+                  <li>Piemontese</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div id="content">
+         <div class="pbutton" id="pbutton"><button type="button" class="p" onclick="jump_to('#img70')">70</button><button type="button" class="p" onclick="jump_to('#img71')">71</button><button type="button" class="p" onclick="jump_to('#img72')">72</button><button type="button" class="p" onclick="jump_to('#img73')">73</button><button type="button" class="p" onclick="jump_to('#img74')">74</button></div>
+         <table class="legenda">
+            <tr>
+               <th>Legenda</th>
+            </tr>
+            <tr>
+               <td><strike>parola</strike></td>
+               <td>parola o espressione cancellate dall'autore</td>
+            </tr>
+            <tr>
+               <td><mark class="unclear">parola</mark></td>
+               <td>parola o espressione che risultano poco chiare sulla fonte primaria</td>
+            </tr>
+            <tr>
+               <td><mark class="scribble">parola</mark></td>
+               <td>lettera, parola o espressione scarabocchiate</td>
+            </tr>
+            <tr>
+               <td><mark class="ink">parola</mark></td>
+               <td>lettera, parola o espressione coperte da una macchia d'inchiostro</td>
+            </tr>
+            <tr>
+               <td><mark class="foreign">parola</mark></td>
+               <td>parola o espressione appartenenti a una lingua diversa rispetto a quella del testo</td>
+            </tr>
+            <tr>
+               <td><mark class="distinct">parola</mark></td>
+               <td>parola o espressione arcaiche</td>
+            </tr>
+            <tr>
+               <td>(parola)</td>
+               <td>parola errata rispetto all'italiano standard</td>
+            </tr>
+            <tr>
+               <td>_</td>
+               <td>indica il punto in cui la parola presente nella fonte è stata divisa nell'andare a
+                  capo</td>
+            </tr>
+            <tr>
+               <td>(...)</td>
+               <td>indica la mancanza della trascrizione di una parola</td>
+            </tr>
+         </table>
+         <h2 class="pagine">Pagina 70</h2>
+         <div class="img" id="img70"><img src="p70.jpg"><button type="button" class="backup" onclick="jump_to('#pbutton')">Torna su</button></div>
+         <p id="dateline">
+            16
+            </p>
+         <p></p>
+         
+         Grandine grossa, acqua tinta e neve
+         
+         per l'<mark class="foreign">aer</mark> tenebroso si riversa; 
+         
+         forse la citazione ha un sapore un 
+         
+         <mark class="unclear">
+            (po) po'</mark>
+         letterario, ma in questa vita 
+         
+         di strapazzi qualche po' di lette
+         <text><span class="syll">_</span></text>
+         
+         ratura ha <strike>il</strike>un fascino <strike>di un</strike> ri
+         <text><span class="syll">_</span></text>
+         
+         posante.
+         
+         Almeno mi pareva di 
+         
+         essere come Ciacco
+         
+         (stassera)
+         stasera, 
+         
+         pochi minuti fa, quando torna 
+         <text><span class="syll">_</span></text>
+         
+         vo in albergo dopo aver cam
+         <text><span class="syll">_</span></text>
+         
+         minato per ore al buio, perden
+         <text><span class="syll">_</span></text>
+         
+         domi e disperdendomi per la 
+         
+         campagna, sotto una pioggia 
+         
+         continua, affondando nel 
+         
+         fango e nella fanghiglia, col 
+         
+         berretto che perdeva il colore 
+         
+         e stillava gocciole turchine lungo
+         
+         le 
+         
+         (guancie)
+         guance 
+         fino al collo.
+         
+         Sono 
+         
+         tre giorni che non scrivo.
+         
+         Tre
+         
+         giorni fa mi alzai alle 3 e 
+         
+         3 quarti e partii per casa. 
+         
+         <h2 class="pagine">Pagina 71</h2>
+         <div class="img" id="img71"><img src="p71.jpg"><button type="button" class="backup" onclick="jump_to('#pbutton')">Torna su</button></div>
+         
+         Una volta alzarmi nella notte
+         
+         mi sarebbe parso <mark class="scribble">u</mark>na disgrazia, 
+         
+         mentre ora non mi preoccupa più: 
+         
+         quando penso al fastidio e alla 
+         
+         pena che l'anno scorso mi davano
+         
+         i disagi dello sfollamento a Mo
+         <text><span class="syll">_</span></text> 
+         
+         riondo - freddo, arrembaggi nella
+         
+         corriera zeppa,  ritardi nei treni <mark class="unclear">trasporti</mark> di valigie <mark class="unclear">e</mark> 
+         
+         non riesco a capacitarmene, eppure
+         
+         erano <strike>disa</strike> fastidi e pene 
+         ver<strike>e</strike>i, 
+         
+         sinceramente e duramente sofferti. 
+         
+         
+         Il viaggio si svolse senza incidenti. 
+         
+         
+         Un conoscente stupido mi fermò
+         
+         in corridoio dicendomi: attento,
+         
+         sei in pericolo, come se non lo
+         
+         sapessi anch'io e le sue <mark class="unclear">sciocche</mark>
+         
+         parole non • potessero • servire a 
+         
+         attirare su di me sgradite at
+         <text><span class="syll">_</span></text>
+         
+         tenzioni.
+         
+         Invece quando sulla 
+         
+         corriera, pagando il biglietto, 
+         
+         misi l'indice sulle labbra, la
+         
+         signorina mi chiese se avevo bi
+         <text><span class="syll">_</span></text>
+         
+         
+         <h2 class="pagine">Pagina 72</h2>
+         <div class="img" id="img72"><img src="p72.jpg"><button type="button" class="backup" onclick="jump_to('#pbutton')">Torna su</button></div>
+         
+         sogno di qualche cosa e mi promise 
+         
+         di tacere.
+         
+         A C. trovai gli amici che 
+         
+         mi condussero in famiglia.
+                         
+         Un bel 
+         
+         tratto di stradone, poi in un viottolo
+         
+         in collina, che conduce in una sper
+         <text><span class="syll">_</span></text>
+         
+         duta cascina.
+          
+         La mamma mi vide 
+         
+         da lontano e mi corse incontro felice, 
+         
+         come da anni non la vedevo.
+          
+         Per 
+         
+         un fenomeno di telepatia proprio dal 
+         
+         pomeriggio prima, quando avevo de
+         <text><span class="syll">_</span></text> 
+         
+         ciso di partire, aveva cominciato
+         
+         ad aspettarmi; la sera era andata 
+         
+         a letto più tardi pensando che sarei 
+         
+         arrivato, la mattina si era sve
+         <text><span class="syll">_</span></text>
+         
+         gliata più presto.
+          
+         I partigiani del 
+         
+         luogo li hanno aiutati in ogni 
+         
+         modo, hanno trovato il rifugio,
+         
+         curato il trasloco, promesso carte
+         
+         di identità.
+          
+         Chi fece il trasloco
+         
+         non voleva farsi pagare, poi 
+         
+         accettò il prezzo, ma lo versò
+         
+         subito nelle casse del Fronte Na
+         <text><span class="syll">_</span></text>
+         
+         
+         
+         <h2 class="pagine">Pagina 73</h2>
+         <div class="img" id="img73"><img src="p73.jpg"><button type="button" class="backup" onclick="jump_to('#pbutton')">Torna su</button></div>
+         
+         zionale.
+         
+         Bisogna scrivere questi 
+         
+         episodi, perché dopo tanti anni 
+         
+         di abbiezione, <mark class="scribble">g</mark> essi testimoniano
+         
+         soli il sentimento di questo povero
+         
+         popolo italiano.
+          
+         <strike>Anche a C.</strike>
+         
+         La casa a me parve <mark class="ink">c</mark>omoda,
+         
+         dopo le sistemazioni di questi
+         
+         mesi: fa caldo, ci sono tavole
+         
+         e sedie, si mangia in una chiara 
+         
+         cucina pulita, si dorme in 
+         
+         un soffice letto di legno con
+         
+         due materassi. La nonna vive
+         
+         in mezzo a tre gatti e ha una 
+         
+         grande paura.
+          
+         La sua principale occupazione consiste nel protestare e dire: <mark class="unclear">ai</mark> 
+         <text>(...)</text>  l'ha <mark class="foreign">desmentiame</mark>
+         Si passano le 
+         
+         sere in una 𝅘 stalla pulita
+         
+         e comoda; dove una enorme 
+         
+         mucca bianca lecca affettuosamente
+         
+         <strike>un</strike>il suo vitellino, partorito da una setti
+         <text><span class="syll">_</span></text>
+         
+         mana. 
+          
+         Potrò mai rivivere un 
+         
+         periodo di pari riposante se
+         <text><span class="syll">_</span></text>
+         
+         renità?
+         
+         Avevo persuaso ormai
+         
+         papà a venire con me e la
+         
+         
+         <h2 class="pagine">Pagina 74</h2>
+         <div class="img" id="img74"><img src="p74.jpg"><button type="button" class="backup" onclick="jump_to('#pbutton')">Torna su</button></div> 
+         
+         nonna si sarebbe rassegnata 
+         
+         a vivere in un ritiro, mentre la
+         
+         mamma avrebbe girato, quando 
+         
+         <mark class="distinct">stamane</mark> il Comandante mi disse
+         
+         di aver già trovato un altro 
+         
+         aiutante maggiore.
+          
+         Ho dovuto scrivere
+         
+         2 lettere per avvertire papà di 
+         
+         non venire, e mi rincresce, 
+         
+         (perchè)
+         perché
+         
+         non so come supereranno la prossima
+         
+         crisi.
+          
+         La guerra durerà fino al
+         
+         prossimo autunno e non avranno 
+         
+         
+         (nè)
+         né 
+         le tessere,
+         
+         (nè)
+         né 
+         sicurezza al
+         <text><span class="syll">_</span></text>
+         
+         cuna di vita; non solo, ma nel
+         
+         primo periodo di pace ci sarà
+         
+         una forte crisi e il governo non
+         
+         potrà abbandonare i partigiani.
+         
+         Nella sistemazione degli ex com
+         <text><span class="syll">_</span></text>
+         
+         battenti, da cui non potrà prescin
+         <text><span class="syll">_</span></text>
+         
+         dere, dovremo tenere il primo posto.
+          
+         
+         A casa esprimo sempre questi <mark class="unclear">motivi</mark>
+         
+         egoistici e pratici della necessità
+         
+         di <strike>combatt</strike> gettarsi tutti dalla 
+         </div>
+   </body>
+   <footer>
+      <p> Questa applicazione è stata creata da Riccardo Chiari e Adele Stilo nell'anno accademico
+         2022/2023</p>
+   </footer>
+</html>

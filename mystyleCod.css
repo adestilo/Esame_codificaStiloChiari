@@ -1,0 +1,166 @@
+body {
+    background-color: #FAEBD7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.encodingDesc, #profileDesc {
+    display: none;
+}
+
+h1{
+    font-size: 50px;
+}
+
+div.title{
+    color: white;
+    background-image: url("p70.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0% 9%;
+    opacity: 90%;
+    margin-bottom: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 0.5%;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+h2.pagine{
+    margin-top: 5%;
+}
+
+div#intro{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-style: solid;
+    border-color: #DC682B;
+    padding: 2%;
+}
+
+div.responsibility, div.pubblication, div.source, div#encodingDesc, div.people, div.language{
+    background-color: #e092687b; 
+}
+
+button{
+    cursor: pointer;
+}
+
+button.profile, button.encoding{
+    color: white;
+    border: 2px solid black;
+    background-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 25%;
+    font-size: medium;
+}
+
+button.p{
+    color: white;
+    border: 2px solid black;
+    background-color: black;
+    font-size: x-large;
+    margin: 0.5%;
+}
+
+div.pbutton{
+    margin-left: 40%;
+    margin-top: 5%;    
+}
+
+p#dateline{
+    margin-left: 75%;
+}
+
+button.backup{
+    color: white;
+    border: 2px solid black;
+    background-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 25%;
+    font-size: medium;
+}
+
+div.img{
+    margin: 2%;
+    border-style: solid;
+    border-color: #DC682B;
+    padding: 2%;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+div#content{
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: solid;
+    border-color: black;
+    margin-top: 5%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td, th{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+mark.unclear{
+    background-color: plum;
+}
+
+mark.scribble{
+    background-color: lavender;
+}
+
+mark.ink{
+    background-color:cornflowerblue;
+}
+
+mark.foreign{
+    background-color: lightblue;
+}
+
+mark.distinct{
+    background-color: goldenrod;
+}
+
+strike{
+    text-decoration-color: red;
+}
+
+span{
+    margin-left: -0.3%;
+    margin-right: -0.2%;
+}
+
+footer{
+    background-color: black;
+    padding: 2%;
+    margin-top: 5%;
+    color: white;
+    text-align: center;
+}
+
