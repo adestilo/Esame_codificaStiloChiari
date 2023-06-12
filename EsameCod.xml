@@ -536,7 +536,7 @@
                     <lb xml:id="p71l15" n="37" facs="#p71_l15"/>
                     sei in pericolo</said><pc>,</pc> come se non lo
                     <lb xml:id="p71l16" n="38" facs="#p71_l16"/>
-                    sapessi anch'io e le sue <unclear reason="ink blot">sciocche</unclear>
+                    sapessi anch'io e le sue scio<unclear reason="ink blot">cche</unclear>
                     <lb xml:id="p71l17" n="39" facs="#p71_l17"/>
                     parole non <g ref="#bullet">•</g> potessero <g ref="#bullet">•</g> servire a 
                     <lb xml:id="p71l18" n="40" facs="#p71_l18"/>
@@ -745,7 +745,7 @@
                     <lb xml:id="p74l21" n="109" facs="#p74_l21"/>
                     egoistici e pratici della necessità
                     <lb xml:id="p74l22" n="110" facs="#p74_l22"/>
-                    di <abbr>combatt</abbr> gettarsi tutti dalla 
+                    di <del rend="overstrike"><abbr>combatt</abbr></del> gettarsi tutti dalla 
                 </ab>
             </div>
         </body>
